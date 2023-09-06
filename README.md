@@ -1,3 +1,3 @@
 # nodeJS
 
-Retrouvez ici mes premier test sur nodeJS !
+Retrouvez ici mes premiers tests sur nodeJS !
