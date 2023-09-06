@@ -1,0 +1,6 @@
+Fichier créé grâce à Node.js
+Ajout de note numéro 1
+Ajout de note numéro 2
+Test ajout de plusieurs notes
+Note 1
+Note 2
