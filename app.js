@@ -64,7 +64,7 @@ console.log("Flecher:", notes);
 
 // On import validator
 import validator from "validator";
-import chalk from "chalk";
+
 
 // On définis l'email
 const email = "3thernitydev@gamingandchill.fr";
@@ -76,7 +76,13 @@ if (validator.isEmail(email)) {
     console.log("Adresse email invalide !");
 }
 
+
+
+
 // Chalk écriture en vert dans la console
+// On import Chalk
+import chalk from "chalk";
+
 // Utilisation de chalk.<couleur> pour afficher un message dans la console de la couleurs de sont choix
 
 console.log(chalk.green("Succes"));
@@ -85,3 +91,8 @@ console.log(chalk.green("Succes"));
 // Rajout du .bold pour l'affichage en gras
 
 console.log(chalk.green.bold("Succes"));
+
+// Nodemon test du live reload
+
+// On import nodemon
+import nodemon from "nodemon";
