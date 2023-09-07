@@ -4,8 +4,6 @@
 
 // Lecture - écriture
 
-
-
 // Faire apparaître "Hello NodeJS" dans la console
 // Utilisation de node app.js
 
@@ -15,17 +13,20 @@ console.log("Hello NodeJS");
 // Utilisation de files system
 
 // Importation du module 'fs' (file system) pour la gestion des fichiers
-import * as fs from 'fs'
+import * as fs from "fs";
 
 // Création du fichier note.txt
-fs.writeFileSync('note.txt', 'Fichier créé grâce à Node.js');
+fs.writeFileSync("note.txt", "Fichier créé grâce à Node.js");
 
 // Ajout de notes supplémentaires avec des sauts de ligne
-fs.appendFileSync('note.txt', '\nAjout de note numéro 1');
-fs.appendFileSync('note.txt', '\nAjout de note numéro 2');
+fs.appendFileSync("note.txt", "\nAjout de note numéro 1");
+fs.appendFileSync("note.txt", "\nAjout de note numéro 2");
 
 // Ajout de plusieurs notes en une seule fois
-fs.appendFileSync('note.txt', '\nTest ajout de plusieurs notes\nNote 1\nNote 2');
+fs.appendFileSync(
+    "note.txt",
+    "\nTest ajout de plusieurs notes\nNote 1\nNote 2"
+);
 
 // -----------------------------//
 //              B              //
@@ -34,7 +35,7 @@ fs.appendFileSync('note.txt', '\nTest ajout de plusieurs notes\nNote 1\nNote 2')
 // Inclusion de plusieurs fichiers
 // Importation de la variable name
 
-import * as name from './utils.js';
+import * as name from "./utils.js";
 console.log(name.name);
 
 // Nous récupérons par défaut un tableau au format JSON. Il suffit donc d'indiquer une option, en l'occurrence ici "name", pour afficher le prénom souhaité.
@@ -42,18 +43,18 @@ console.log(name.name);
 // Function getNotes
 
 // Importation des functions
-import * as getNote from './note.js';
+import * as getNote from "./note.js";
 
-// Utilisation de la fonction getNotes 
+// Utilisation de la fonction getNotes
 const notes = getNote.getNotes();
 
 // Retour de la fonction
-console.log('Notes:', notes);
+console.log("Notes:", notes);
 
 // Function getNotesFlecher
 
 getNote.getNotesFlecher;
-console.log('Flecher:', notes);
+console.log("Flecher:", notes);
 
 // -----------------------------//
 //              C              //
@@ -62,16 +63,25 @@ console.log('Flecher:', notes);
 // NPM
 
 // On import validator
-import validator from 'validator';
+import validator from "validator";
+import chalk from "chalk";
 
 // On définis l'email
-const email = '3thernitydev@gamingandchill.fr';
+const email = "3thernitydev@gamingandchill.fr";
 
 // On verifie l'addresse mail
 if (validator.isEmail(email)) {
-    console.log('Adresse email valide !');
+    console.log("Adresse email valide !");
 } else {
-    console.log('Adresse email invalide !');
+    console.log("Adresse email invalide !");
 }
 
+// Chalk écriture en vert dans la console
+// Utilisation de chalk.<couleur> pour afficher un message dans la console de la couleurs de sont choix
 
+console.log(chalk.green("Succes"));
+
+// Rajout du gras
+// Rajout du .bold pour l'affichage en gras
+
+console.log(chalk.green.bold("Succes"));
