@@ -8,7 +8,7 @@ const port = 3000;
 // Fonction pour la page d'accueil du site (req = request (requête serveur), res = response (réponse serveur))
 app.get("/", (req, res) => {
     // Affichage d'un message sur la page
-    res.send("Serveur Express :D");
+    res.send("Serveur Express + nodemon");
 });
 
 // Definition du port du serveur

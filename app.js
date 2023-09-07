@@ -91,8 +91,3 @@ console.log(chalk.green("Succes"));
 // Rajout du .bold pour l'affichage en gras
 
 console.log(chalk.green.bold("Succes"));
-
-// Nodemon test du live reload
-
-// On import nodemon
-import nodemon from "nodemon";
